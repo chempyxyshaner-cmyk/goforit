@@ -1,0 +1,494 @@
+header {
+  padding-bottom: 17px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px 0 40px;
+}
+header nav .elearn {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+header nav .elearn h2 {
+  color: rgb(54, 54, 255);
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+header nav ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+header nav ul li:hover {
+  color: rgb(87, 143, 248);
+}
+header nav ul button {
+  width: 140px;
+  height: 50px;
+  background-color: rgb(115, 115, 255);
+  color: white;
+  border: 1px solid rgb(119, 119, 255);
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.onemassive {
+  background-image: url(./crosscampus2019.avif);
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.onemassive::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgb(14, 14, 80));
+  opacity: 0.5;
+}
+.onemassive .onebigchild {
+  width: 700px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 60px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  z-index: 11;
+}
+.onemassive .onebigchild h4 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  z-index: 11;
+}
+.onemassive .onebigchild h2 {
+  font-size: 50px;
+  text-transform: capitalize;
+  color: rgb(236, 255, 25);
+}
+.onemassive .onebigchild p {
+  font-size: 20px;
+  color: white;
+}
+.onemassive .onebigchild button {
+  width: 100px;
+  height: 44px;
+  background-color: aqua;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+article {
+  width: 80%;
+  height: 300px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+article .minicard {
+  height: 100%;
+  background-color: rgb(177, 210, 223);
+  transition: 0.4s;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+article .minicard p {
+  text-align: center;
+}
+article .minicard h4 {
+  font-size: 20px;
+}
+article .minicard:hover {
+  transform: translateY(-20px);
+  color: rgb(0, 0, 0);
+  background-color: aqua;
+}
+
+.welcome {
+  width: 80%;
+  margin: 50px auto;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.welcome .leftside {
+  width: 48%;
+  height: 100%;
+}
+.welcome .rightside {
+  width: 48%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+}
+.welcome .rightside h3 {
+  font-size: 34px;
+}
+.welcome .rightside .pe {
+  color: rgb(24, 82, 255);
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.welcome .rightside .pe::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: rgb(0, 47, 157);
+  bottom: 0;
+  left: 90px;
+}
+.welcome .rightside .pi {
+  font-size: 20px;
+}
+.welcome .rightside button {
+  width: 200px;
+  background-color: blue;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.hope {
+  width: 80%;
+  margin: 30px auto;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+}
+.hope .hope__texts h4 {
+  font-size: 30px;
+  font-weight: normal;
+}
+.hope .hope__texts p {
+  color: rgb(0, 57, 227);
+  font-weight: bolder;
+  position: relative;
+  margin-left: 60px;
+  font-size: 20px;
+}
+.hope .hope__texts p::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  background-color: blue;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hope .hope__texts p::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: blue;
+  left: 140px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hope .giantchild {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.hope .giantchild .bigson {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.hope .giantchild .bigson .webdesign {
+  width: 100%;
+  height: 240px;
+  background-image: url(./cat-1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.hope .giantchild .bigson .webdesign .spanchik {
+  width: 150px;
+  height: 55px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hope .giantchild .bigson .webdesign .spanchik p {
+  color: blue;
+}
+.hope .giantchild .bigson .webdesign .spanchik h4 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.hope .giantchild .bigson .graphic {
+  width: 48%;
+  height: 240px;
+  margin-left: 3px;
+  background-image: url(./cat-3.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  overflow: hidden;
+}
+.hope .giantchild .bigson .graphic .spanchik {
+  width: 150px;
+  height: 55px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hope .giantchild .bigson .graphic .spanchik p {
+  color: blue;
+}
+.hope .giantchild .bigson .graphic .spanchik h4 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.hope .giantchild .smallson {
+  width: 38%;
+  height: 100%;
+  background-image: url(./cat-4.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.hope .giantchild .smallson .spanchik {
+  width: 150px;
+  height: 55px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hope .giantchild .smallson .spanchik p {
+  color: blue;
+}
+.hope .giantchild .smallson .spanchik h4 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.thenewone {
+  width: 80%;
+  margin: 50px auto;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.thenewone .textsvia p {
+  color: blue;
+  font-weight: bolder;
+  position: relative;
+  text-align: center;
+}
+.thenewone .textsvia p::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: blue;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.thenewone .textsvia p::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  background-color: blue;
+  left: 180px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.thenewone .textsvia h4 {
+  font-size: 35px;
+}
+.thenewone .grid__container {
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+.thenewone .grid__container .griduse {
+  height: 100%;
+}
+.thenewone .grid__container .griduse .image__holder {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.thenewone .grid__container .griduse .image__holder img {
+  transition: 0.4s;
+}
+.thenewone .grid__container .griduse .image__holder img:hover {
+  transform: scale(1.1);
+}
+.thenewone .grid__container .griduse .image__holder .span2 {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(72, 72, 238);
+  display: flex;
+  gap: 15px;
+  color: white;
+  height: 30px;
+  border-radius: 6px;
+  align-items: center;
+  padding: 0 8px 0 8px;
+}
+.thenewone .grid__container .griduse .data__holder {
+  width: 100%;
+  height: 50%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+.thenewone .grid__container .griduse .data__holder .money__container {
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.thenewone .grid__container .griduse .data__holder .money__container h5 {
+  font-size: 20px;
+  text-align: center;
+}
+.thenewone .grid__container .griduse .data__holder .money__container .stars {
+  display: flex;
+}
+.thenewone .grid__container .griduse .data__holder .user__container {
+  width: 100%;
+  height: 40px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+.thenewone .grid__container .griduse .data__holder .user__container .child1 {
+  width: 33%;
+  border: 1px solid grey;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fortoday {
+  width: 80%;
+  margin: 80px auto;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+.fortoday .instructor p {
+  color: blue;
+  position: relative;
+  text-align: center;
+}
+.fortoday .instructor p::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: blue;
+  left: 185px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fortoday .instructor p::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  background-color: blue;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fortoday .instructor h5 {
+  font-size: 30px;
+}
+.fortoday .ultragrid {
+  width: 100%;
+  height: 420px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.fortoday .ultragrid .mega {
+  height: 100%;
+}
+.fortoday .ultragrid .mega .name {
+  position: relative;
+}
+.fortoday .ultragrid .mega .name .Ps {
+  font-weight: bolder;
+  font-size: 23px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.fortoday .ultragrid .mega .name .pps {
+  position: absolute;
+  top: 66px;
+  left: 95px;
+}
+.fortoday .ultragrid .mega .name .mega__logos {
+  background-color: rgb(255, 255, 255);
+  width: 100px;
+  border: 1px solid rgb(89, 88, 88);
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 3px;
+}
+.fortoday .ultragrid .mega .mega__img {
+  background-image: linear-gradient(rgb(32, 32, 32), white, white);
+  overflow: hidden;
+}
+.fortoday .ultragrid .mega .mega__img:hover img {
+  transform: scale(1.1);
+}
+.fortoday .ultragrid .mega .mega__img img {
+  transition: 0.4s;
+}/*# sourceMappingURL=style.css.map */
